@@ -1,0 +1,18 @@
+# Build outputs
+*.exe
+*.obj
+*.o
+*.out
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS metadata
+.DS_Store
+Thumbs.db
