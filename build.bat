@@ -2,7 +2,8 @@
 REM Single cl invocation: compile + link without the CRT, size-oriented.
 setlocal
 
-set SRC=pe-mini.c
+set SRC=%~1
+if "%SRC%"=="" set SRC=pe-mini.c
 set CFLAGS=/DNDEBUG /DENABLE_DEBUG=1
 
 cl /nologo /Os /GS- /GR- /W3 /Zl /Gy /Fe:%SRC%.exe %SRC% %CFLAGS% ^
